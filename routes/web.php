@@ -10,8 +10,27 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
     //return view('welcome');
     return '<h1>Hello Foo</h1>';
+});
+*/
+/*
+Route::pattern('foo','[0-9a-zA-Z]{3}');
+
+Route::get('/{foo?}', function ($foo='bar123') {
+    return $foo;
+})->where('foo123','[0-9a-zA-Z]{3}');
+*/
+
+Route::get('/',[
+	'as' => 'home',
+	function(){
+		return '제 이름은 "home"입니다.';
+	}
+]);
+
+Route::get('/home',function(){
+	return redirect(route('home'));
 });
