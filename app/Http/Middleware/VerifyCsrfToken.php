@@ -12,6 +12,9 @@ class VerifyCsrfToken extends BaseVerifier
      * @var array
      */
     protected $except = [
+    	//articles입력 예외로.. Post 등등
+    	//'articles',
+    	//'articles/*'
         //
     ];
 }

@@ -62,6 +62,7 @@ Route::get('/',function(){
 });
 */
 
+/*
 Route::get('/',function(){
 	//$items = ['apple','banana', 'tomato'];
 
@@ -70,6 +71,8 @@ Route::get('/',function(){
 	//return view('layout.master');
 	return view('welcome');
 });
+*/
 
+//Route::get('/','WelcomeController@index');
 
-
+Route::resource('articles','ArticlesController');
