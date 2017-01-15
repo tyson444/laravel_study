@@ -75,4 +75,45 @@ Route::get('/',function(){
 
 //Route::get('/','WelcomeController@index');
 
-Route::resource('articles','ArticlesController');
+//Route::resource('articles','ArticlesController');
+
+
+Route::get('/','WelcomeController@index');
+
+
+Route::get('auth/login', function(){
+
+	$credentials = [
+		'name' => 'John Doe'
+		//'email' => 'john@example.com',
+		//'password' => 'password',
+	];
+
+	if(! auth()->attempt($credentials)){
+		return '로그인 정보가 정확하지 않습니다.';
+	}
+
+	//return redirect('protected');
+	return '머야이거';
+});
+
+Route::get('protected', function(){
+	dump(session()->all());
+
+	if(! auth()->check()){
+		retrun '누구세요?111';
+	}
+	if( auth()->check()){
+		retrun '누구세요?222';
+	}
+
+	return '어서 오세요' . auth()->user()->name;
+});
+
+Route::get('auth/logout', function(){
+	auth()->logout();
+
+	return '또 봐요~';
+});
+
+
