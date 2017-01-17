@@ -96,7 +96,7 @@ Route::get('auth/login', function(){
 	//return redirect('protected');
 	return '머야이거';
 });
-
+/*
 Route::get('protected', function(){
 	dump(session()->all());
 
@@ -109,7 +109,7 @@ Route::get('protected', function(){
 
 	return '어서 오세요' . auth()->user()->name;
 });
-
+*/
 Route::get('auth/logout', function(){
 	auth()->logout();
 
