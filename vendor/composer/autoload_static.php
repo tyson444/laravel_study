@@ -279,9 +279,12 @@ class ComposerStaticInite4ee7603cc0f8364f62f64e6d7cbeedc
 
     public static $classMap = array (
         'AddNameToAuthorsTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_11_132710_add_name_to_authors_table.php',
+        'CreateArticleTagTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_18_112719_create_article_tag_table.php',
+        'CreateArticlesTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_18_094928_create_articles_table.php',
         'CreateAuthorsTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_11_132331_create_authors_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreatePostsTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_11_132228_create_posts_table.php',
+        'CreateTagsTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_18_112633_create_tags_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
