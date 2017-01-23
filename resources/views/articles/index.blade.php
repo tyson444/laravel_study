@@ -17,5 +17,10 @@
 		@endforelse
 	</ul>
 </div>
+	@if($articles->count())
+	<div class="text-center">
+		{!! $articles->render() !!}
+	</div>
+	@endif
 @stop
 <!--stop안하면 메뉴가 밑으로 가고, 하면 위로 올라옴. -->
