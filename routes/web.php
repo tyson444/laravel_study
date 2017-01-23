@@ -1,5 +1,11 @@
 <?php
-
+Route::resource('articles','ArticlesController');
+/*
+DB::listen(function ($query){
+	var_dump($query->sql);
+});
+*/
+/*
 Route::get('/','WelcomeController@index');
 
 Route::get('protected', ['middleware' => 'auth', function() {
@@ -43,3 +49,4 @@ Route::get('auth/logout', function(){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+*/
