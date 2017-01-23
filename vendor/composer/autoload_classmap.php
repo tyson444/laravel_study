@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddNameToAuthorsTable' => $baseDir . '/database/migrations/2017_01_11_132710_add_name_to_authors_table.php',
+    'ArticlesTableSeeder' => $baseDir . '/database/seeds/ArticlesTableSeeder.php',
     'CreateArticleTagTable' => $baseDir . '/database/migrations/2017_01_18_112719_create_article_tag_table.php',
     'CreateArticlesTable' => $baseDir . '/database/migrations/2017_01_18_094928_create_articles_table.php',
     'CreateAuthorsTable' => $baseDir . '/database/migrations/2017_01_11_132331_create_authors_table.php',
@@ -545,4 +546,5 @@ return array(
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
     'TestCase' => $baseDir . '/tests/TestCase.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/src/Template.php',
+    'UsersTableSeeder' => $baseDir . '/database/seeds/UsersTableSeeder.php',
 );

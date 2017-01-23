@@ -279,6 +279,7 @@ class ComposerStaticInite4ee7603cc0f8364f62f64e6d7cbeedc
 
     public static $classMap = array (
         'AddNameToAuthorsTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_11_132710_add_name_to_authors_table.php',
+        'ArticlesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/ArticlesTableSeeder.php',
         'CreateArticleTagTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_18_112719_create_article_tag_table.php',
         'CreateArticlesTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_18_094928_create_articles_table.php',
         'CreateAuthorsTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_11_132331_create_authors_table.php',
@@ -817,6 +818,7 @@ class ComposerStaticInite4ee7603cc0f8364f62f64e6d7cbeedc
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
         'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
+        'UsersTableSeeder' => __DIR__ . '/../..' . '/database/seeds/UsersTableSeeder.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
